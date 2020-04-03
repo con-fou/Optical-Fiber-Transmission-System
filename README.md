@@ -52,11 +52,11 @@ Keeping the above parameters constant and only changing the optical fiber length
 
 We will calculate the power spectral density (PSD) estimation for the signal before and after transmission, using the periodogram.
 
-<img src="/tex/59ff8f5aaa807ec49bf6ed232d59f411.svg?invert_in_darkmode&sanitize=true" align=middle width=59.65178009999999pt height=36.460254599999985pt/> and <img src="/tex/f55bcc578fc87f8507a7433ac132b31b.svg?invert_in_darkmode&sanitize=true" align=middle width=88.22809709999999pt height=36.460254599999985pt/>
+<p align="center"><img src="/tex/08e3ebd804a701f3dafcc5c7bda05caa.svg?invert_in_darkmode&sanitize=true" align=middle width=198.84086309999998pt height=35.77743345pt/></p>
 
 As shown in Figure 3, the PSD is not affected by the chromatic dispersion, since the chromatic dispersion frequency response has <img src="/tex/9521b392d0ce699df15edaf14a5e6fa0.svg?invert_in_darkmode&sanitize=true" align=middle width=93.55009784999999pt height=24.65753399999998pt/>, for each values ​​of <img src="/tex/f93ce33e511096ed626b4719d50f17d2.svg?invert_in_darkmode&sanitize=true" align=middle width=8.367621899999993pt height=14.15524440000002pt/> and <img src="/tex/ae4fb5973f393577570881fc24fc2054.svg?invert_in_darkmode&sanitize=true" align=middle width=10.82192594999999pt height=14.15524440000002pt/>.
 
-| <img src="/plots/3.png" alt="3rd plot" width=800 /> | 
+| <img src="/plots/3.png" alt="3rd plot" width=1200 /> | 
 |:--:| 
 | *Figure 3: (a) The spectrum of the signal to be transmitted. (b) The spectrum of the signal received through the optical fiber.* |
 
@@ -78,7 +78,7 @@ where we limit the impulse response of the filter at time, according to Nyquist'
 
 We apply the filter, in the time domain, by convolution to the signal we received from the fiber optic transmission. The filtered signal is given by:
 <p align="center"><img src="/tex/efcc134d78e7b02f6fede57dfb6da689.svg?invert_in_darkmode&sanitize=true" align=middle width=466.18079804999996pt height=47.60747145pt/></p>
-where from the N + M-1 samples, we only hold M, according to the `mode='same'` of the function `scipy.signal.convolve( )`.
+where from the N + M-1 samples, we only hold M, according to the ` mode='same' ` of the function ` scipy.signal.convolve( ) `
 
 | <img src="/plots/5.png" alt="5th plot" width=600 /> | 
 |:--:| 
