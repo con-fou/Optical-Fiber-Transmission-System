@@ -78,7 +78,7 @@ where we limit the impulse response of the filter at time, according to Nyquist'
 
 We apply the filter, in the time domain, by convolution to the signal we received from the fiber optic transmission. The filtered signal is given by:
 <p align="center"><img src="/tex/efcc134d78e7b02f6fede57dfb6da689.svg?invert_in_darkmode&sanitize=true" align=middle width=466.18079804999996pt height=47.60747145pt/></p>
-where from the N+M-1 samples, we only hold M according to the <code>mode='same'</code> of the function <code>scipy.signal.convolve( )</code>
+where from the N+M-1 samples,we only hold M according to the <code>mode='same'</code> of the function <code>scipy.signal.convolve( )</code>
 
 | <img src="/plots/5.png" alt="5th plot" width=600 /> | 
 |:--:| 
