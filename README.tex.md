@@ -92,7 +92,7 @@ We apply the filter, in the time domain, by convolution to the signal we receive
 $$
 filtered_{ss}[n]=(ss *b)[n] = \sum_{m=0}^{N-1}ss[n-m]b[m],~~n = N+M-1 
 $$
-where from the N+M-1 samples, we only hold M, according to the <code>mode='same'</code> of the function <code>scipy.signal.convolve( )</code>
+where from the N+M-1 samples, we only hold M according to the <code>mode='same'</code> of the function <code>scipy.signal.convolve( )</code>
 
 | <img src="/plots/5.png" alt="5th plot" width=600 /> | 
 |:--:| 
