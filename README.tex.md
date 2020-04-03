@@ -62,11 +62,11 @@ Keeping the above parameters constant and only changing the optical fiber length
 
 We will calculate the power spectral density (PSD) estimation for the signal before and after transmission, using the periodogram.
 
-$P=\frac{|S|^2}{M^2}$ and $P_{CD} = \frac{|SS|^2}{M^2}$
+$$P=\frac{|S|^2}{M^2} ~ \text{and} ~ P_{CD} = \frac{|SS|^2}{M^2}$$
 
 As shown in Figure 3, the PSD is not affected by the chromatic dispersion, since the chromatic dispersion frequency response has $|H(z,\omega)|=1$, for each values ​​of $z$ and $\omega$.
 
-| <img src="/plots/3.png" alt="3rd plot" width=800 /> | 
+| <img src="/plots/3.png" alt="3rd plot" width=1200 /> | 
 |:--:| 
 | *Figure 3: (a) The spectrum of the signal to be transmitted. (b) The spectrum of the signal received through the optical fiber.* |
 
@@ -92,7 +92,7 @@ We apply the filter, in the time domain, by convolution to the signal we receive
 $$
 filtered_{ss}[n]=(ss *b)[n] = \sum_{m=0}^{N-1}ss[n-m]b[m],~~n = N+M-1 
 $$
-where from the N + M-1 samples, we only hold M, according to the `mode='same'` of the function `scipy.signal.convolve( )`.
+where from the N + M-1 samples, we only hold M, according to the ` mode='same' ` of the function ` scipy.signal.convolve( ) `
 
 | <img src="/plots/5.png" alt="5th plot" width=600 /> | 
 |:--:| 
